@@ -1,0 +1,132 @@
+body{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background: #fff;
+    font-family: latto, sans-serif;
+    height: 100vh;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 600px;
+    margin: 400px auto;
+    background-color: lightblue;
+    padding: 1em 2em;
+    border-radius: 5px;
+}
+
+.inputs{
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.inputs .input-task{
+    flex: 3;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.input-task:focus{
+    outline: none;
+}
+
+.inputs .input-date{
+    flex: 1;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.input-date:focus{
+    outline: none;
+}
+
+.add-task{
+    flex: .85;
+    padding: 12px;
+    border: none;
+    font-size: 1rem;
+    background: green;
+    color: white;
+    border-radius: 5px;
+}
+
+.add-task:hover{
+    color: green;
+    background: #fff;
+    border: 1px solid green;
+}
+
+.task-container{
+    margin: 10px 1px;
+    width: 100%;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.task-list{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    gap: .5em;
+    width: 95%;
+    margin: .5em;
+}
+
+.task{
+    flex: 5;
+    list-style-type: none;
+    font-size: 1rem;
+}
+
+.date{
+    flex: 2.5;
+    list-style-type: none;
+    font-size: 1rem;
+}
+
+.complete-task{
+    flex: .5;
+    padding: .75em;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    background: blue;
+    color: #fff;
+}
+
+.edit-task{
+    flex: .15;
+    padding: .75em;
+    background: #fff;
+    border-radius: 5px;
+    border: 1px solid orange;
+}
+
+.edit-task i{
+    color: orange;
+    font-size: 1rem;
+}
+
+.delete-task{
+    flex: .15;
+    padding: .75em;
+    background: #fff;
+    border-radius: 5px;
+    border: 1px solid red;
+}
+
+.delete-task i{
+    color: red;
+    font-size: 1rem;
+}

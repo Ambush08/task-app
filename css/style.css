@@ -163,7 +163,7 @@ body{
         width: 100%;
         flex: unset; /* remove flex sizing */
         font-size: 0.9rem;
-        padding: 10px;
+        padding: 8px;
     }
 
     /* Task list layout */

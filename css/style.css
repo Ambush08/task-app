@@ -167,6 +167,11 @@ body{
     }
 
     /* Task list layout */
+
+    .task-container{
+        width: 100%;
+    }
+
     .task-list {
         flex-direction: column;
         align-items: flex-start;

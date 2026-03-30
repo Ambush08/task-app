@@ -144,16 +144,17 @@ body{
     }
 
     .container {
-        width: 95%;
+        width: 90%;
         margin: 50px auto; /* reduce huge spacing */
         padding: 1em;
     }
 
     .inputs {
         flex-direction: column; /* stack inputs */
-        align-items: stretch;
+        align-items: center;
         gap: 8px;
         padding: 5px;
+        width: 100%;
     }
 
     .inputs .input-task,

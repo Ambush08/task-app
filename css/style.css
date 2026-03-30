@@ -134,3 +134,63 @@ body{
     color: red;
     font-size: 1rem;
 }
+
+
+
+@media (max-width: 468px) {
+
+    body {
+        height: auto;
+    }
+
+    .container {
+        width: 95%;
+        margin: 50px auto; /* reduce huge spacing */
+        padding: 1em;
+    }
+
+    .inputs {
+        flex-direction: column; /* stack inputs */
+        align-items: stretch;
+        gap: 8px;
+        padding: 5px;
+    }
+
+    .inputs .input-task,
+    .inputs .input-date,
+    .add-task {
+        width: 100%;
+        flex: unset; /* remove flex sizing */
+        font-size: 0.9rem;
+        padding: 10px;
+    }
+
+    /* Task list layout */
+    .task-list {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 5px;
+    }
+
+    .task,
+    .date {
+        width: 100%;
+        font-size: 0.9rem;
+    }
+
+    /* Buttons row */
+    .complete-task,
+    .edit-task,
+    .delete-task {
+        width: 100%;
+        flex: unset;
+        font-size: 0.9rem;
+        padding: 8px;
+    }
+
+    /* Optional: group buttons nicely */
+    .task-list {
+        display: flex;
+        flex-direction: column;
+    }
+}

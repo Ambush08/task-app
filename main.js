@@ -87,7 +87,7 @@ function renderTasks() {
 
         taskContainer.appendChild(task);
 
-        completeTask.addEventListener('click', function() {
+        completeTask.addEventListener('click', () => {
             tasks[i].isComplete = !tasks[i].isComplete;
 
             localStorage.setItem('tasks', JSON.stringify(tasks));
